@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuildMake"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#e4c494">
+
+    <TextView
+        android:textColor="#57a39b"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="길드를 만들어 길드원들과 함께 정보를 공유하세요"/>
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:src="@drawable/guilddog"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="길드장 : "/>
+    <TextView
+        android:textColor="#b16207"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:text="길드장 이름"
+        android:id="@+id/myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="길드 이름을 입력하세요"
+        android:id="@+id/guildname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="길드에 대한 한줄 설명"
+        android:id="@+id/guildexplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+
+        android:textSize="20dp"
+        android:background="#f1a4a4"
+        android:layout_marginTop="30dp"
+        android:text="길드 생성"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Guildmake"/>
+
+
+</LinearLayout>

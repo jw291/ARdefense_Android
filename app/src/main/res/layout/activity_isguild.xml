@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Isguild"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#e4c494">
+
+    <ImageButton
+        android:visibility="invisible"
+        android:id="@+id/guildapplybutton"
+        android:layout_gravity="right"
+        android:background="@drawable/d"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:textSize="20dp"
+        android:textColor="#5da19a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입한 길드 정보"/>
+
+    <ImageView
+        android:src="@drawable/guildpuppy"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="길드 명 : "/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/guildinfoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="길드명"/>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 정보"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/isguildrecyclerview"
+        android:layout_width="300dp"
+        android:layout_height="200dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

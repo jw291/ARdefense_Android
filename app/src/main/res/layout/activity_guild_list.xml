@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuildList"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#a67357"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="길드명"/>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="길드장"/>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="한줄 소개"/>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신청하기" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/guildlistrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

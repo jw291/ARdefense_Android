@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:background="@drawable/loginlogo"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <EditText
+                android:id="@+id/id_login_et"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+                android:textSize="12dp"
+            android:hint="   아이디 입력"/>
+            <EditText
+                android:id="@+id/pw_login_et"
+            android:background="@drawable/edittext_border"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+                android:textSize="12dp"
+            android:hint="   비밀번호 입력"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/Login_button"
+                android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+                android:background="#34d9fd"
+            android:text="로그인"
+                android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/topbottomline"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/fake_facebook_login_button"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:background="#506bcf"
+                android:text="페이스북으로 로그인"
+                android:textSize="17dp"
+                android:textColor="#ffffff"/>
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_login_button"
+                android:background="#506bcf"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="17dp"
+                android:textColor="#ffffff"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/fake_kakao_login_button"
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:background="#fff300"
+                android:text="카카오톡으로 로그인"
+                android:textSize="17dp"/>
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/kakao_login_button"
+            android:layout_marginTop="5dp"
+            android:background="#fff300"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:text="continue with kakaotalk"
+            android:textSize="11dp"
+            android:textColor="#ffffff"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="처음 오셨나요?"/>
+        <Button
+            android:textColor="#8f8f8f"
+            android:id="@+id/login_register"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      가입하기"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

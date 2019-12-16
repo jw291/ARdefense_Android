@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">defense</string>
+    <string name="facebook_app_id">2094321394183286</string>
+    <string name="fb_login_protocol_scheme">fb2094321394183286</string>
+</resources>
